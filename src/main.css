@@ -1,0 +1,6 @@
+/* src/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* put any custom global styles _below_ the directives */

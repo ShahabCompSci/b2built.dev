@@ -1,20 +1,30 @@
-import { Rocket, Sparkles } from "lucide-react";
+import { Sparkles, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.jpg"; // your portrait
 
 export default function Hero() {
   return (
     <section className="mx-auto flex max-w-7xl flex-col items-start gap-12 px-6 py-24 md:flex-row">
-      {/* LEFT column — headline & CTA */}
+      {/* LEFT column — headline + CTA */}
       <div className="w-full md:w-1/2">
-        <h1 className="text-left text-4xl font-extrabold sm:text-5xl lg:text-6xl leading-tight">
-          Your <span className="text-brand">big idea</span>.<br />
-          Our <span className="inline-flex items-center gap-2 rounded bg-gray-100 px-2 py-1 text-brand"><Sparkles className="h-6 w-6" />tech power</span>.<br />
-          Let’s <span className="inline-flex items-center gap-2 rounded bg-gray-100 px-2 py-1 text-brand"><Rocket className="h-6 w-6" />launch.</span>
+        <h1 className="text-left text-5xl font-extrabold leading-tight sm:text-6xl lg:text-7xl">
+          <span className="inline-flex items-center gap-2">
+            <Sparkles className="h-8 w-8 text-brand" />
+            Your&nbsp;big&nbsp;idea.
+          </span>
+          <br />
+          <span className="inline-flex items-center gap-2">
+            Our&nbsp;tech&nbsp;power.
+          </span>
+          <br />
+          <span className="inline-flex items-center gap-2 rounded bg-gray-100 px-2 py-1">
+            Let’s&nbsp;launch
+            <Rocket className="h-6 w-6 text-brand" />
+          </span>
         </h1>
 
         <p className="mt-6 max-w-xl text-left text-lg text-gray-600">
-          Without the hassle of building and managing an in‑house team.
+          Without the hassle of building and managing an in-house team.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-6">
